@@ -17,8 +17,52 @@ const playfair = Playfair_Display({
 });
 
 export const metadata: Metadata = {
-    title: "Portfolio",
-    description: "Premium portfolio website",
+    title: {
+        default: "Rishikesh Pawar — Java Full Stack Developer",
+        template: "%s | Rishikesh Pawar",
+    },
+    description:
+        "Java Full Stack Developer specialising in React, Spring Boot, REST APIs and MySQL. Building robust, scalable web applications with clean design.",
+    keywords: [
+        "Rishikesh Pawar",
+        "Java Full Stack Developer",
+        "React Developer",
+        "Spring Boot",
+        "REST API",
+        "MySQL",
+        "Portfolio",
+        "Web Developer India",
+    ],
+    authors: [{ name: "Rishikesh Pawar", url: "https://github.com" }],
+    creator: "Rishikesh Pawar",
+    metadataBase: new URL("https://rishikesh-pawar.vercel.app"),
+    openGraph: {
+        type: "website",
+        locale: "en_IN",
+        url: "https://rishikesh-pawar.vercel.app",
+        siteName: "Rishikesh Pawar Portfolio",
+        title: "Rishikesh Pawar — Java Full Stack Developer",
+        description:
+            "Java Full Stack Developer specialising in React, Spring Boot, REST APIs and MySQL.",
+    },
+    twitter: {
+        card: "summary_large_image",
+        title: "Rishikesh Pawar — Java Full Stack Developer",
+        description:
+            "Java Full Stack Developer specialising in React, Spring Boot, REST APIs and MySQL.",
+        creator: "@rishikeshpawar",
+    },
+    robots: {
+        index: true,
+        follow: true,
+        googleBot: {
+            index: true,
+            follow: true,
+            "max-video-preview": -1,
+            "max-image-preview": "large",
+            "max-snippet": -1,
+        },
+    },
 };
 
 export default function RootLayout({
