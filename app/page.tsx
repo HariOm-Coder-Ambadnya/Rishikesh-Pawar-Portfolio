@@ -17,6 +17,12 @@ const skills = [
 
 const experience = [
     {
+        period: 'Feb 2026 – Present',
+        role: 'Full Stack Development Intern (Remote)',
+        company: 'Web Mobi 360',
+        description: 'Developing backend services for Cerebro, an AI-powered document intelligence platform, using Spring Boot and Java 17. Designing RESTful APIs for document ingestion and LLM query handling and integrating third-party AI APIs for contextual chat. Building responsive Next.js interfaces in Agile environment with automated testing.',
+    },
+    {
         period: 'One week',
         role: 'Software Engineer Trainee',
         company: 'Zensar Technologies',
