@@ -7,40 +7,40 @@ import Link from 'next/link';
 
 const projects = [
     {
-        title: 'E-Commerce Platform',
+        title: 'EduNexus',
         description:
-            'A full-featured e-commerce platform with payment integration, inventory management, and admin dashboard. Built with modern technologies for optimal performance.',
-        tech: ['Next.js', 'TypeScript', 'Stripe', 'PostgreSQL'],
-        image: 'https://images.unsplash.com/photo-1557821552-17105176677c?auto=format&fit=crop&q=80&w=1200',
-        link: '#',
-        github: '#',
+            'A modern educational portal for students and admins to manage and share academic resources effortlessly. Features a centralized campus core for resource management.',
+        tech: ['Next.js', 'Spring Boot', 'PostgreSQL', 'Tailwind'],
+        image: 'https://images.unsplash.com/photo-1501504905252-473c47e087f8?q=80&w=1200',
+        link: 'https://github.com/HariOm-Coder-Ambadnya/EduNexus',
+        github: 'https://github.com/HariOm-Coder-Ambadnya/EduNexus',
+    },
+    {
+        title: 'Webmobi',
+        description:
+            'RAG-powered document chat and team intelligence hub using Groq and BGE-M3 embeddings for advanced vector search and real-time collaboration.',
+        tech: ['Groq', 'MongoDB', 'React', 'Vector Search'],
+        image: 'https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&q=80&w=1200',
+        link: 'https://github.com/HariOm-Coder-Ambadnya/webmobicerebros',
+        github: 'https://github.com/HariOm-Coder-Ambadnya/webmobicerebros',
     },
     {
         title: 'AI Content Generator',
         description:
-            'AI-powered content generation tool leveraging OpenAI API. Features include blog post generation, SEO optimization, and multi-language support.',
-        tech: ['React', 'Node.js', 'OpenAI', 'MongoDB'],
-        image: 'https://images.unsplash.com/photo-1675557009875-436f595b1853?auto=format&fit=crop&q=80&w=1200',
-        link: '#',
-        github: '#',
+            'Full-stack AI-powered content generation platform that creates high-quality blog posts and articles using Grok API and Firebase integration.',
+        tech: ['Spring Boot', 'React', 'Firebase', 'Grok API'],
+        image: 'https://images.unsplash.com/photo-1763568258289-47ada8efe7ea?q=80&w=1200',
+        link: 'https://github.com/HariOm-Coder-Ambadnya/AI-Content-Generator',
+        github: 'https://github.com/HariOm-Coder-Ambadnya/AI-Content-Generator',
     },
     {
-        title: 'Real-Time Chat App',
+        title: 'JavaDocs',
         description:
-            'Scalable real-time messaging platform with WebSocket support, end-to-end encryption, and media sharing capabilities.',
-        tech: ['Next.js', 'Socket.io', 'PostgreSQL', 'AWS'],
-        image: 'https://images.unsplash.com/photo-1577563906417-45a11b3f9f7c?auto=format&fit=crop&q=80&w=1200',
-        link: '#',
-        github: '#',
-    },
-    {
-        title: 'Project Dashboard',
-        description:
-            'Collaborative project management tool with Kanban boards, time tracking, team chat, and analytics dashboard.',
-        tech: ['Next.js', 'Prisma', 'tRPC', 'Tailwind'],
-        image: 'https://images.unsplash.com/photo-1543286386-713bdd548da4?auto=format&fit=crop&q=80&w=1200',
-        link: '#',
-        github: '#',
+            'A production-quality documentation platform for learning Java, OOP, Spring Framework, Spring Boot, and JPA/Hibernate with live examples.',
+        tech: ['Java', 'Spring Boot', 'Next.js', 'Hibernate'],
+        image: 'https://images.unsplash.com/photo-1627398242454-45a1465c2479?auto=format&fit=crop&q=80&w=1200',
+        link: 'https://github.com/HariOm-Coder-Ambadnya/JavaDocs',
+        github: 'https://github.com/HariOm-Coder-Ambadnya/JavaDocs',
     },
 ];
 

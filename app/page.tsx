@@ -26,22 +26,22 @@ const experience = [
 
 const projects = [
     {
-        title: 'DevAssist AI',
-        description: 'AI-Powered Developer Tool with code review and error explanation.',
-        tech: ['React', 'Spring Boot', 'GenAI'],
+        title: 'EduNexus',
+        description: 'Modern educational portal for academic resource management.',
+        tech: ['Next.js', 'Spring Boot', 'PostgreSQL'],
+        image: 'https://images.unsplash.com/photo-1501504905252-473c47e087f8?q=80&w=1200',
+    },
+    {
+        title: 'Webmobi',
+        description: 'RAG-powered AI team intelligence and document chat hub.',
+        tech: ['Groq', 'MongoDB', 'React'],
         image: 'https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&q=80&w=1200',
     },
     {
-        title: 'TaskFlow',
-        description: 'Full-stack task management system with status workflows.',
-        tech: ['React', 'Spring Boot', 'MySQL'],
-        image: 'https://images.unsplash.com/photo-1540350394557-8d14678e7f91?auto=format&fit=crop&q=80&w=1200',
-    },
-    {
-        title: 'WNextGen Attendance',
-        description: 'Attendance portal with role-based access and dashboards.',
-        tech: ['React', 'Spring Boot', 'Security'],
-        image: 'https://images.unsplash.com/photo-1506784983877-45594efa4cbe?auto=format&fit=crop&q=80&w=1200',
+        title: 'AI Content Generator',
+        description: 'Full-stack AI platform for high-quality content generation.',
+        tech: ['Spring Boot', 'React', 'Grok API'],
+        image: 'https://images.unsplash.com/photo-1763568258289-47ada8efe7ea?q=80&w=1200',
     },
 ];
 
