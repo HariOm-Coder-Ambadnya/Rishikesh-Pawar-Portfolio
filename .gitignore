@@ -48,3 +48,4 @@ build_output.txt
 # Firebase (if added later)
 firebase-service-account.json
 .firebaserc
+.vercel
