@@ -4,7 +4,7 @@ import { motion, useInView, useScroll, useTransform } from 'framer-motion';
 import { useRef } from 'react';
 import Link from 'next/link';
 import {
-    ArrowRight, Mail, Github, Linkedin,
+    ArrowRight, Mail, Github, Linkedin, ExternalLink,
     Code2, Palette, Zap, Database, Server, GitBranch, Phone,
 } from 'lucide-react';
 import dynamic from 'next/dynamic';
@@ -45,18 +45,32 @@ const projects = [
         description: 'Modern educational portal for academic resource management.',
         tech: ['Next.js', 'Spring Boot', 'PostgreSQL'],
         image: 'https://images.unsplash.com/photo-1501504905252-473c47e087f8?q=80&w=1200',
+        link: 'https://github.com/HariOm-Coder-Ambadnya/EduNexus',
+        github: 'https://github.com/HariOm-Coder-Ambadnya/EduNexus',
     },
     {
         title: 'Webmobi',
         description: 'RAG-powered AI team intelligence and document chat hub.',
         tech: ['Groq', 'MongoDB', 'React'],
         image: 'https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&q=80&w=1200',
+        link: 'https://github.com/HariOm-Coder-Ambadnya/webmobicerebros',
+        github: 'https://github.com/HariOm-Coder-Ambadnya/webmobicerebros',
     },
     {
         title: 'AI Content Generator',
         description: 'Full-stack AI platform for high-quality content generation.',
         tech: ['Spring Boot', 'React', 'Grok API'],
         image: 'https://images.unsplash.com/photo-1763568258289-47ada8efe7ea?q=80&w=1200',
+        link: 'https://ai-content-generator-tau-seven.vercel.app/',
+        github: 'https://github.com/HariOm-Coder-Ambadnya/AI-Content-Generator',
+    },
+    {
+        title: 'Collab Edit',
+        description: 'Real-time collaborative text editor with shared cursor visibility.',
+        tech: ['React', 'Firebase', 'Socket.io'],
+        image: 'https://images.unsplash.com/photo-1587620962725-abab7fe55159?q=80&w=1200',
+        link: 'https://collabedit-nine.vercel.app/',
+        github: 'https://github.com/HariOm-Coder-Ambadnya/collabedit',
     },
 ];
 
@@ -468,9 +482,24 @@ export default function Home() {
                                             className="w-full h-full object-cover grayscale opacity-60 group-hover:grayscale-0 group-hover:opacity-100 dark:opacity-40 dark:group-hover:opacity-100 transition-all duration-700"
                                         />
                                     </div>
-                                    <div className="absolute inset-0 bg-gray-900/0 group-hover:bg-gray-900/40 transition-colors duration-700 flex items-center justify-center">
-                                        <div className="w-16 h-16 md:w-20 md:h-20 bg-white dark:bg-zinc-100 rounded-full flex items-center justify-center scale-0 group-hover:scale-100 transition-transform duration-700 shadow-xl">
-                                            <ArrowRight className="w-6 h-6 md:w-8 md:h-8 text-secondary dark:text-gray-900 -rotate-45" />
+                                    <div className="absolute inset-0 bg-gray-900/0 group-hover:bg-gray-900/40 dark:group-hover:bg-zinc-950/60 transition-colors duration-700 flex items-center justify-center">
+                                        <div className="flex gap-4 opacity-0 group-hover:opacity-100 translate-y-4 group-hover:translate-y-0 transition-all duration-700">
+                                            <a
+                                                href={project.link}
+                                                target="_blank"
+                                                rel="noopener noreferrer"
+                                                className="w-16 h-16 bg-white dark:bg-zinc-800 rounded-full flex items-center justify-center hover:scale-110 transition-transform"
+                                            >
+                                                <ExternalLink className="w-6 h-6 text-gray-900 dark:text-zinc-100" />
+                                            </a>
+                                            <a
+                                                href={project.github}
+                                                target="_blank"
+                                                rel="noopener noreferrer"
+                                                className="w-16 h-16 bg-white dark:bg-zinc-800 rounded-full flex items-center justify-center hover:scale-110 transition-transform"
+                                            >
+                                                <Github className="w-6 h-6 text-gray-900 dark:text-zinc-100" />
+                                            </a>
                                         </div>
                                     </div>
                                 </div>

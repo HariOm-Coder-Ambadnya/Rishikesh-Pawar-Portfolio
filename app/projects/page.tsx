@@ -30,7 +30,7 @@ const projects = [
             'Full-stack AI-powered content generation platform that creates high-quality blog posts and articles using Grok API and Firebase integration.',
         tech: ['Spring Boot', 'React', 'Firebase', 'Grok API'],
         image: 'https://images.unsplash.com/photo-1763568258289-47ada8efe7ea?q=80&w=1200',
-        link: 'https://github.com/HariOm-Coder-Ambadnya/AI-Content-Generator',
+        link: 'https://ai-content-generator-tau-seven.vercel.app/',
         github: 'https://github.com/HariOm-Coder-Ambadnya/AI-Content-Generator',
     },
     {
@@ -39,8 +39,17 @@ const projects = [
             'A production-quality documentation platform for learning Java, OOP, Spring Framework, Spring Boot, and JPA/Hibernate with live examples.',
         tech: ['Java', 'Spring Boot', 'Next.js', 'Hibernate'],
         image: 'https://images.unsplash.com/photo-1627398242454-45a1465c2479?auto=format&fit=crop&q=80&w=1200',
-        link: 'https://github.com/HariOm-Coder-Ambadnya/JavaDocs',
+        link: 'https://java-docs.vercel.app/',
         github: 'https://github.com/HariOm-Coder-Ambadnya/JavaDocs',
+    },
+    {
+        title: 'Collab Edit',
+        description:
+            'A real-time collaborative text editor designed for synchronized code editing. Featuring instantaneous multi-user updates and shared cursor visibility for seamless teamwork.',
+        tech: ['React', 'Firebase', 'Socket.io', 'Tailwind'],
+        image: 'https://images.unsplash.com/photo-1587620962725-abab7fe55159?q=80&w=1200',
+        link: 'https://collabedit-nine.vercel.app/',
+        github: 'https://github.com/HariOm-Coder-Ambadnya/collabedit',
     },
 ];
 
@@ -179,22 +188,26 @@ export default function ProjectsPage() {
                                         className="w-full h-full object-cover grayscale opacity-60 group-hover:grayscale-0 group-hover:opacity-100 dark:opacity-40 dark:group-hover:opacity-100 transition-all duration-700"
                                     />
                                 </div>
-                                <div className="absolute inset-0 bg-gray-900/0 group-hover:bg-gray-900/40 dark:group-hover:bg-zinc-950/60 transition-colors duration-700 flex items-center justify-center">
-                                    <div className="flex gap-4 opacity-0 group-hover:opacity-100 translate-y-4 group-hover:translate-y-0 transition-all duration-700">
-                                        <a
-                                            href={project.link}
-                                            className="w-16 h-16 bg-white dark:bg-zinc-800 rounded-full flex items-center justify-center hover:scale-110 transition-transform"
-                                        >
-                                            <ExternalLink className="w-6 h-6 text-gray-900 dark:text-zinc-100" />
-                                        </a>
-                                        <a
-                                            href={project.github}
-                                            className="w-16 h-16 bg-white dark:bg-zinc-800 rounded-full flex items-center justify-center hover:scale-110 transition-transform"
-                                        >
-                                            <Github className="w-6 h-6 text-gray-900 dark:text-zinc-100" />
-                                        </a>
+                                    <div className="absolute inset-0 bg-gray-900/0 group-hover:bg-gray-900/40 dark:group-hover:bg-zinc-950/60 transition-colors duration-700 flex items-center justify-center">
+                                        <div className="flex gap-4 opacity-0 group-hover:opacity-100 translate-y-4 group-hover:translate-y-0 transition-all duration-700">
+                                            <a
+                                                href={project.link}
+                                                target="_blank"
+                                                rel="noopener noreferrer"
+                                                className="w-16 h-16 bg-white dark:bg-zinc-800 rounded-full flex items-center justify-center hover:scale-110 transition-transform"
+                                            >
+                                                <ExternalLink className="w-6 h-6 text-gray-900 dark:text-zinc-100" />
+                                            </a>
+                                            <a
+                                                href={project.github}
+                                                target="_blank"
+                                                rel="noopener noreferrer"
+                                                className="w-16 h-16 bg-white dark:bg-zinc-800 rounded-full flex items-center justify-center hover:scale-110 transition-transform"
+                                            >
+                                                <Github className="w-6 h-6 text-gray-900 dark:text-zinc-100" />
+                                            </a>
+                                        </div>
                                     </div>
-                                </div>
                             </div>
 
                             <div className="flex justify-between items-start gap-4">
